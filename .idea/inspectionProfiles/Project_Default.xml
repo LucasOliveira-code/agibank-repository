@@ -4,5 +4,8 @@
     <inspection_tool class="JavadocDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ADDITIONAL_TAGS" value="Author" />
     </inspection_tool>
+    <inspection_tool class="NewClassNamingConvention" enabled="true" level="TYPO" enabled_by_default="true" editorAttributes="TYPO">
+      <extension name="ClassNamingConvention" enabled="true" />
+    </inspection_tool>
   </profile>
 </component>
