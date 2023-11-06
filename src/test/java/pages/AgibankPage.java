@@ -2,8 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import support.Utils;
 
-public class AgibankPage {
+public class AgibankPage extends Utils {
 
     WebDriver driver;
     public AgibankPage(WebDriver driver) {
@@ -11,15 +12,15 @@ public class AgibankPage {
     }
     public void acessarAgibank() {
         driver.get("https://blogdoagi.com.br/");
-        driver.findElement(By.xpath("//button[@id='search-open']"));
+        validaElementoNatela(By.xpath("//button[@id='search-open']"));
     }
     public void clickBtn() {
-        driver.findElement(By.xpath("//button[@id='search-open']")).click();
+        clicar(By.xpath("//button[@id='search-open']"));
     }
     public void campoPesquisar() {
-        driver.findElement(By.xpath("(//input[@placeholder='Pesquisar …'])[1]"));
+        validaElementoNatela(By.xpath("(//input[@placeholder='Pesquisar …'])[1]"));
     }
     public void validarBtnPesquisar() {
-        driver.findElement(By.xpath("(//input[@class='search-submit'])[1]"));
+        validaElementoNatela(By.xpath("(//input[@class='search-submit'])[1]"));
     }
 }

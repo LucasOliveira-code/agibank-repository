@@ -1,7 +1,7 @@
 package runner;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.Cucumber;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -12,8 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 @CucumberOptions(
         plugin = {},
         features = "src/test/resources/features",
-        tags = {"@Agibank"},
-        glue = {"steps"}
+        tags = "@Agibank",
+        glue = {"steps"},
+        publish = true
 )
 public class RunCucumberTest {
 

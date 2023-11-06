@@ -1,9 +1,9 @@
 package steps.agibank;
 
-import cucumber.api.java.es.Dado;
-import cucumber.api.java.it.Quando;
-import cucumber.api.java.pt.E;
-import cucumber.api.java.pt.Entao;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Quando;
+import io.cucumber.java.pt.E;
+import io.cucumber.java.pt.Entao;
 import pages.AgibankPage;
 import runner.RunCucumberTest;
 
