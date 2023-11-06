@@ -10,9 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {},
         features = "src/test/resources/features",
-        tags = "@BuscaValida",
+        tags = "@BuscaInvalida",
         glue = {"steps"},
         publish = true
 )
